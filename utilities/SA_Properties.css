@@ -211,5 +211,41 @@ nav .nav-bar .logo a{
         margin-top: 20px;
     }
 }
-
-
+/* start-page-section  */
+.hero-section{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    margin: 15px auto;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, hsl(243, 100%, 7%,0.6) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    flex-wrap: wrap;
+}
+.left-flexbox{
+    width: 45%;
+    height: auto;
+    margin: 30px;
+}
+.left-flexbox h3{
+    color: #ffffff;
+    font-size: 34px;
+    position: relative;
+}
+.left-flexbox h3::before{
+    content: 'Welcome to S A Properties';
+    color: #ffffff;
+    font-size: 14px;
+    position: absolute;
+    top: -14px;
+}
+.right-flexbox{
+    width: 45%;
+    display: grid;
+    place-items: center;
+}
+.right-flexbox img{
+    width: 100%;
+    margin: 0 auto;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;   */
+}
