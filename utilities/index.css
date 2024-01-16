@@ -11,13 +11,14 @@
 
 
 /* ===== Colours ===== */
-:root{
+ :root{
     --body-color: #E4E9F7;
     --nav-color: #ffffff;
-    --side-nav: #010718;
+    --side-nav: #ffffff;
     --text-color: #000000;
     --search-bar: #F2F2F2;
     --search-text: #010718;
+    
 }
 
 body{
@@ -34,8 +35,8 @@ body.dark{
 }
 
  /* navbar */
+
 nav{
-    position: fixed;
     top: 0;
     left: 0;
     height: 70px;
@@ -210,8 +211,16 @@ nav .nav-bar .logo a{
         display: block;
         margin-top: 20px;
     }
+    .upper-part-nav{
+        padding: 10px 45px;
+    }
+    .email-box h3{
+        font-size: 13px;
+    }
+   
 }
 /* start-page-section  */
+
 .hero-section{
     width: 90%;
     height: 90vh;
@@ -247,5 +256,81 @@ nav .nav-bar .logo a{
 .right-flexbox img{
     width: 100%;
     margin: 0 auto;
-    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;   */
+   
+}
+/* <!-- about-us --> */
+
+.About-us-section{
+    display: flex;
+    width:90%;
+    height: auto;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    background-color: #ffffff;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+}
+.left-section-img img{
+    width: 90%;
+    height: 90%;
+}
+.left-section-img {
+    width: 30%;
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.right-section-content{
+    width: 40%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+
+}
+body{
+    background-color: rgb(219, 219, 255);
+}
+header .upper-part-nav{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #767676;
+    color: #ffffff;
+}
+header .upper-part-nav .maharera-detail{
+    display: flex;
+    margin-right: 10%;
+    align-self: center;
+    justify-content: center;
+    gap: 20px;
+}
+header .upper-part-nav .email-box{
+    margin-left:50px;
+}
+header.upper-part-nav .email-box h3{
+    font-size: 20px;
+    font-weight: 900;
+}
+header .upper-part-nav .maharera-image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+header .upper-part-nav .maharera-detail .maharera-number{
+    margin-top: 15px;
 }
